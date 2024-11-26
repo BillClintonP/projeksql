@@ -1,0 +1,52 @@
+{% extends 'layout_admin.html' %}
+
+{% block konten %}
+<div class="container">
+    <div class="header">
+        <h2>INPUT DATA OSIS</h2>
+        <form action="/simpan" method="post" >
+            <div class="wrap">
+
+                <div class="group">
+                  <input type="int" name="id" placeholder="Enter ID">
+                  <i class="fa circle-pass"></i>
+                  <i class="fa fa-unlock-alt"></i>
+                </div>
+
+                <div class="group">
+                  <input type="text" name="nama_osis" placeholder="Enter nama_osis">
+                  <i class="fa circle-pass"></i>
+                  <i class="fa fa-unlock-alt"></i>
+                </div>
+
+                <div class="group">
+                  <input type="text" name="sekbid"  placeholder="Enter sekbid">
+                  <i class="fa circle-pass"></i>
+                  <i class="fa fa-unlock-alt"></i>
+                </div>
+
+                <div class="group">
+                    <input type="text" name="tahun_bergabung" placeholder="Enter tahun_bergabung">
+                    <i class="fa circle-pass"></i>
+                    <i class="fa fa-unlock-alt"></i>
+                  </div>
+                  
+                  <div class="group">
+                  <input type="text" name="jabatan" placeholder="Enter jabatan">
+                  <i class="fa circle-pass"></i>
+                  <i class="fa fa-unlock-alt"></i>
+                </div>
+             </div>
+
+             <div class="group">
+                <button type="submit">Kirim</button>
+              </div>
+        </form>
+        
+    </div>
+    </div>
+</div>
+
+        
+
+{% endblock %}

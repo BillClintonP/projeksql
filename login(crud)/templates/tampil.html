@@ -1,0 +1,33 @@
+{% extends 'layout_admin.html' %}
+
+{% block konten %}
+<div class="container">
+    <div class="header">
+        <div class="wrap">
+
+
+    <table border="1">
+        <tr> 
+            <th>nama_osis</th>
+            <th>sekbid</th>
+            <th>tahun_bergabung</th>
+            <th>jabatan</th>
+        </tr>
+ 
+        {% for result in data %}
+        <tr>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[3] }}</td>
+            <td>{{ result[4] }}</td>
+            <td> <a href="/update/{{ result[0] }}">UPDATE</a> - <a href="/hapus/{{ result[0] }}">DELETE</a> </td>
+        </tr>
+        {% endfor %}
+ 
+
+
+    </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
