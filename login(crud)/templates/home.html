@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block konten %}
+
+<div class="container">
+  <div class="header">
+  <h1 class="made">Made By Bill</h1>
+  <h2>HOME - LOGIN</h2>
+  <form action="/aksi_login" method="post">
+  </div>
+  <div class="wrap">
+    <div class="group">
+      <input type="text" id="user" name="username" placeholder="username">
+      <i class="fa circle-pass"></i>
+      <i class="fa fa-unlock-alt"></i>
+    </div>
+    <div class="group">
+      <input type="password" id="pass" name="password" placeholder="password">
+      <i class="fa circle-pass"></i>
+      <i class="fa fa-unlock-alt"></i>
+    </div>
+    <div class="group">
+      <button>Login</button>
+      <a class="forgot" href="#" >Forgot your password?</a>
+    </div>
+  </div>
+</form>
+
+<br>
+<i>Username : admin</i><br>
+<i>password : 4321</i>
+{% endblock %}

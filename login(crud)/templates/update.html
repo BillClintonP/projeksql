@@ -1,0 +1,48 @@
+{% extends 'layout_admin.html' %}
+{% block konten %}
+<div class="container">
+    <div class="header">
+        <h2>INPUT DATA HANDPHONE</h2>
+        <form action="/simpan" method="post" >
+            <div class="wrap">
+
+                <div class="group">
+                  <input type="text" name="id" placeholder="Enter ID">
+                  <i class="fa circle-pass"></i>
+                  <i class="fa fa-unlock-alt"></i>
+                </div>
+
+                <div class="group">
+                  <input type="text" name="nama_brand" placeholder="Enter nama_brand">
+                  <i class="fa circle-pass"></i>
+                  <i class="fa fa-unlock-alt"></i>
+                </div>
+
+                <div class="group">
+                  <input type="text" name="cpu"  placeholder="Enter cpu">
+                  <i class="fa circle-pass"></i>
+                  <i class="fa fa-unlock-alt"></i>
+                </div>
+
+                <div class="group">
+                    <input type="text" name="tahun_produksi" placeholder="Enter tahun_produksi">
+                    <i class="fa circle-pass"></i>
+                    <i class="fa fa-unlock-alt"></i>
+                  </div>
+                  
+                  <div class="group">
+                  <input type="text" name="seri" placeholder="Enter seri">
+                  <i class="fa circle-pass"></i>
+                  <i class="fa fa-unlock-alt"></i>
+                </div
+             </div>
+
+             <div class="group">
+                <button type="submit">Kirim</button>
+              </div>
+        </form>
+        
+    </div>
+    </div>
+</div>
+{% endblock %}
